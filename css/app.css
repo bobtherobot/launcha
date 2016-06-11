@@ -1,0 +1,102 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  background: #FFF;
+  /*padding: 0px 20px 10px 0px; TRBL */
+  /*margin: 0 0px 0px 10px; TRBL */
+  /*overflow: auto;*/
+  -webkit-user-select: none;
+}
+.forkme {
+	position: absolute; 
+	top: 0; 
+	right: 0; 
+	border: 0;
+}
+.form-container {
+	width : 800px;
+	white-space : nowrap;
+}
+.left-col {
+	position: relative;
+	display : inline-block;
+	width : 200px;
+	float : left;
+}
+.right-col {
+	position: relative;
+	display : inline-block;
+	width : 600px;
+}
+.left-block {
+	width : 200px;
+}
+.right-block {
+	
+}
+table.on-checks td {
+	padding : 0 5px 10px 5px; /*TRBL */
+	width : 30px;
+	white-space : nowrap;
+}
+.section-every {
+	margin-bottom : 0px;
+}
+.section-every-label {
+	display : inline-block;
+	min-width : 32px;
+	line-height : 30px;
+	white-space:nowrap;
+}
+.section-pad {
+	padding : 10px 0px 0px 0px; /*TRBL */
+	/*border-top : 1px solid #DDDDDD;*/
+	color : #999;
+}
+.section-left-col {
+	padding : 17px 10px 0px 0px; /*TRBL */
+	text-align : right;
+	font-weight : bold;
+	color : #000000;
+}
+.btn-group {
+	display : inline-block;
+	margin : 3px 0px 3px 0px; /*TRBL */
+}
+.btn-sm {
+	height : 20px;
+	line-height : 18px;
+	font-size : 13px;
+	margin : 0px; /*TRBL */
+	padding : 0px 4px 0px 4px; /*TRBL */
+}
+
+.text-bold {
+	font-weight : bold;
+}
+
+.btn-group label.active { 
+	color : #FFF;
+	background-color :#317cc8; 
+}
+
+#output {
+	position : fixed;
+	bottom : 3px;
+	right : 20px;
+	width : 300px;
+	font : 12px Courier;
+	z-index : 10;
+}
+.bottomSpacer {
+	height : 100px;
+}
+.appContainer {
+	margin-left : 20px;
+}
+.container {
+  width: auto;
+  max-width: 680px;
+  padding: 0 15px;
+}
+

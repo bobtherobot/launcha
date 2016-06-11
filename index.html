@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Launcha</title>
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link href="bootstrap/css/bootstrap-theme.min.css" rel="stylesheet">
+<link href="css/sticky-footer.css" rel="stylesheet" type="text/css" />
+<link href="css/app.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+	
+	<!-- github fork me -->
+	<a href="https://github.com/bobtherobot/launcha"><img class="forkme" alt="Fork me on GitHub" src="github-forkme.png"></a>
+	
+<div class="container appContainer">
+
+	<div class="page-header">
+		<h1>Launcha</h1>
+		<small>Generate a plist file to launch a script or process at regular intervals.
+			( Mac OS X's new/preferred replacement for cron. ) <br />
+			Created by <a href="http://www.gieson.com">Mike Gieson.</a></small>
+	</div>
+	
+	
+	<!-- Naming -->
+	<div class="row">
+		<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 section-pad section-left-col">Name / ID</div>
+		<div class="col-xs-10 col-sm-10 col-md-10 col-lg-10 section-pad">
+			<input class="form-control form-control-inline" type="text" id="GroupName" placeholder="Whatever you want (including spaces and what-not)" />
+		</div>
+	</div>
+	
+	<!-- script -->
+	<div class="row">
+		<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 section-pad section-left-col">Program</div>
+		<div class="col-xs-10 col-sm-10 col-md-10 col-lg-10 section-pad">
+			<input class="form-control form-control-inline" type="text" id="Program" placeholder="Command OR /path/to/script.sh" />
+			<br /><input class="form-control form-control-inline" type="text" id="ProgramArguments" placeholder="Space delimited arguments (optional)" />
+			<br /><input class="form-control form-control-inline" type="text" id="WorkingDirectory" placeholder="Change to this directory (chdir) before running (optional)" />
+			<!--<br /><input type="checkbox" id="LaunchOnlyOnce" /> Run only one time-->
+			<br /><input type="checkbox" id="LowPriorityIO" checked /> Low priority File I/O
+			<!--<br /><input type="checkbox" id="RunAtLoad" /> Run at system startup-->
+		</div>
+	</div>
+	
+	<!-- seconds / interval  
+	====================================================================== -->
+	<div class="row">
+		<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 section-pad section-left-col">Seconds</div>
+		<div class="col-xs-10 col-sm-10 col-md-10 col-lg-10 section-pad"> 
+			<input type="checkbox" id="useStartInterval" /> <div class="section-every-label"> Run every </div>
+			<input type="number" min="0" max="59" id="StartInterval" placeholder="0" />
+			<div class="section-every-label"> seconds.</div>
+		</div>
+	</div>
+	
+	<!-- minutes  
+	====================================================================== -->
+	<div class="row">
+		<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 section-pad section-left-col">Minutes</div>
+		<div class="col-xs-10 col-sm-10 col-md-10 col-lg-10 section-pad">
+			<div class="section-every">
+				<div class="section-every-label">Every</div>
+				<div class="btn-group" data-toggle="buttons">
+					<label class="btn btn-default btn-sm" data-waschecked="true"><input type="checkbox" id="minutes-every-1" value="1"/> minute</label>
+					<label class="btn btn-default btn-sm"><input type="checkbox" id="minutes-every-2" value="2" /> 2</label>
+					<label class="btn btn-default btn-sm"><input type="checkbox" id="minutes-every-5" value="5" /> 5</label>
+					<label class="btn btn-default btn-sm"><input type="checkbox" id="minutes-every-5" value="10" /> 10</label>
+					<label class="btn btn-default btn-sm"><input type="checkbox" id="minutes-every-15" value="15" /> 15</label>
+					<label class="btn btn-default btn-sm"><input type="checkbox" id="minutes-every-20" value="20" /> 20</label>
+					<label class="btn btn-default btn-sm"><input type="checkbox" id="minutes-every-30" value="30" /> 30</label>
+					
+				</div>
+				<div class="section-every-label"> Or on these minutes:</div>
+			</div>
+			<div class="section-every">
+				<div class="btn-group" data-toggle="buttons">
+					<label class="btn btn-default btn-sm"><input type="checkbox" id="minutes-on-0" value="0" />0</label>
+					<label class="btn btn-default btn-sm"><input type="checkbox" id="minutes-on-1" value="1" />1</label>
+					<label class="btn btn-default btn-sm"><input type="checkbox" id="minutes-on-2" value="2" />2</label>
+					<label class="btn btn-default btn-sm"><input type="checkbox" id="minutes-on-3" value="3" />3</label>
+					<label class="btn btn-default btn-sm"><input type="checkbox" id="minutes-on-4" value="4" />4</label>
+					<label class="btn btn-default btn-sm"><input type="checkbox" id="minutes-on-5" value="5" />5</label>
+					<label class="btn btn-default btn-sm"><input type="checkbox" id="minutes-on-6" value="6" />6</label>
+					<label class="btn btn-default btn-sm"><input type="checkbox" id="minutes-on-7" value="7" />7</label>
+					<label class="btn btn-default btn-sm"><input type="checkbox" id="minutes-on-8" value="8" />8</label>
+					<label class="btn btn-default btn-sm"><input type="checkbox" id="minutes-on-9" value="9" />9</label>
+					<label class="btn btn-default btn-sm"><input type="checkbox" id="minutes-on-10" value="10" />10</label>
+					<label class="btn btn-default btn-sm"><input type="checkbox" id="minutes-on-11" value="11" />11</label>
+					<label class="btn btn-default btn-sm"><input type="checkbox" id="minutes-on-12" value="12" />12</label>
+					<label class="btn btn-default btn-sm"><input type="checkbox" id="minutes-on-13" value="13" />13</label>
+					<label class="btn btn-default btn-sm"><input type="checkbox" id="minutes-on-14" value="14" />14</label>
+					<label class="btn btn-default btn-sm"><input type="checkbox" id="minutes-on-15" value="15" />15</label>
+					<label class="btn btn-default btn-sm"><input type="checkbox" id="minutes-on-16" value="16" />16</label>
+					<label class="btn btn-default btn-sm"><input type="checkbox" id="minutes-on-17" value="17" />17</label>
+					<label class="btn btn-default btn-sm"><input type="checkbox" id="minutes-on-18" value="18" />18</label>
+					<label class="btn btn-default btn-sm"><input type="checkbox" id="minutes-on-19" value="19" />19</label>
+					<label class="btn btn-default btn-sm"><input type="checkbox" id="minutes-on-20" value="20" />20</label>
+					<label class="btn btn-default btn-sm"><input type="checkbox" id="minutes-on-21" value="21" />21</label><br/>
+					<label class="btn btn-default btn-sm"><input type="checkbox" id="minutes-on-22" value="22" />22</label>
+					<label class="btn btn-default btn-sm"><input type="checkbox" id="minutes-on-23" value="23" />23</label>
+					<label class="btn btn-default btn-sm"><input type="checkbox" id="minutes-on-24" value="24" />24</label>
+					<label class="btn btn-default btn-sm"><input type="checkbox" id="minutes-on-25" value="25" />25</label>
+					<label class="btn btn-default btn-sm"><input type="checkbox" id="minutes-on-26" value="26" />26</label>
+					<label class="btn btn-default btn-sm"><input type="checkbox" id="minutes-on-27" value="27" />27</label>
+					<label class="btn btn-default btn-sm"><input type="checkbox" id="minutes-on-28" value="28" />28</label>
+					<label class="btn btn-default btn-sm"><input type="checkbox" id="minutes-on-29" value="29" />29</label>
+					<label class="btn btn-default btn-sm"><input type="checkbox" id="minutes-on-30" value="30" />30</label>
+					<label class="btn btn-default btn-sm"><input type="checkbox" id="minutes-on-31" value="31" />31</label>
+					<label class="btn btn-default btn-sm"><input type="checkbox" id="minutes-on-32" value="32" />32</label>
+					<label class="btn btn-default btn-sm"><input type="checkbox" id="minutes-on-33" value="33" />33</label>
+					<label class="btn btn-default btn-sm"><input type="checkbox" id="minutes-on-34" value="34" />34</label>
+					<label class="btn btn-default btn-sm"><input type="checkbox" id="minutes-on-35" value="35" />35</label>
+					<label class="btn btn-default btn-sm"><input type="checkbox" id="minutes-on-36" value="36" />36</label>
+					<label class="btn btn-default btn-sm"><input type="checkbox" id="minutes-on-37" value="37" />37</label>
+					<label class="btn btn-default btn-sm"><input type="checkbox" id="minutes-on-38" value="38" />38</label>
+					<label class="btn btn-default btn-sm"><input type="checkbox" id="minutes-on-39" value="39" />39</label>
+					<label class="btn btn-default btn-sm"><input type="checkbox" id="minutes-on-40" value="40" />40</label><br/>
+					<label class="btn btn-default btn-sm"><input type="checkbox" id="minutes-on-41" value="41" />41</label>
+					<label class="btn btn-default btn-sm"><input type="checkbox" id="minutes-on-42" value="42" />42</label>
+					<label class="btn btn-default btn-sm"><input type="checkbox" id="minutes-on-43" value="43" />43</label>
+					<label class="btn btn-default btn-sm"><input type="checkbox" id="minutes-on-44" value="44" />44</label>
+					<label class="btn btn-default btn-sm"><input type="checkbox" id="minutes-on-45" value="45" />45</label>
+					<label class="btn btn-default btn-sm"><input type="checkbox" id="minutes-on-46" value="46" />46</label>
+					<label class="btn btn-default btn-sm"><input type="checkbox" id="minutes-on-47" value="47" />47</label>
+					<label class="btn btn-default btn-sm"><input type="checkbox" id="minutes-on-48" value="48" />48</label>
+					<label class="btn btn-default btn-sm"><input type="checkbox" id="minutes-on-49" value="49" />49</label>
+					<label class="btn btn-default btn-sm"><input type="checkbox" id="minutes-on-50" value="50" />50</label>
+					<label class="btn btn-default btn-sm"><input type="checkbox" id="minutes-on-51" value="51" />51</label>
+					<label class="btn btn-default btn-sm"><input type="checkbox" id="minutes-on-52" value="52" />52</label>
+					<label class="btn btn-default btn-sm"><input type="checkbox" id="minutes-on-53" value="53" />53</label>
+					<label class="btn btn-default btn-sm"><input type="checkbox" id="minutes-on-54" value="54" />54</label>
+					<label class="btn btn-default btn-sm"><input type="checkbox" id="minutes-on-55" value="55" />55</label>
+					<label class="btn btn-default btn-sm"><input type="checkbox" id="minutes-on-56" value="56" />56</label>
+					<label class="btn btn-default btn-sm"><input type="checkbox" id="minutes-on-57" value="57" />57</label>
+					<label class="btn btn-default btn-sm"><input type="checkbox" id="minutes-on-58" value="58" />58</label>
+					<label class="btn btn-default btn-sm"><input type="checkbox" id="minutes-on-59" value="59" />59</label>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- END minutes --> 
+	
+	<!-- hours  
+	====================================================================== -->
+	<div class="row">
+		<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 section-pad section-left-col">Hours</div>
+		<div class="col-xs-10 col-sm-10 col-md-10 col-lg-10 section-pad">
+			<div class="section-every">
+				<div class="section-every-label">Every</div>
+				<div class="btn-group" data-toggle="buttons">
+					<label class="btn btn-default btn-sm"><input type="checkbox" id="hours-every-1" value="1"/> hour </label>
+					<label class="btn btn-default btn-sm"><input type="checkbox" id="hours-every-2" value="2" /> 2</label>
+					<label class="btn btn-default btn-sm"><input type="checkbox" id="hours-every-4" value="4" /> 4</label>
+					<label class="btn btn-default btn-sm"><input type="checkbox" id="hours-every-6" value="6" /> 6</label>
+					<label class="btn btn-default btn-sm"><input type="checkbox" id="hours-every-8" value="8" /> 8</label>
+					<label class="btn btn-default btn-sm"><input type="checkbox" id="hours-every-12" value="12" /> 12</label>
+				</div>
+				<div class="section-every-label"> Or on these hours:</div>
+			</div>
+			<div class="section-every">
+				<div class="section-every">
+					<div class="btn-group" data-toggle="buttons">
+						<label class="btn btn-default btn-sm"><input type="checkbox" id="hours-on-0" value="0" />Midnight</label>
+						<label class="btn btn-default btn-sm"><input type="checkbox" id="hours-on-1" value="1" />1am</label>
+						<label class="btn btn-default btn-sm"><input type="checkbox" id="hours-on-2" value="2" />2am</label>
+						<label class="btn btn-default btn-sm"><input type="checkbox" id="hours-on-3" value="3" />3am</label>
+						<label class="btn btn-default btn-sm"><input type="checkbox" id="hours-on-4" value="4" />4am</label>
+						<label class="btn btn-default btn-sm"><input type="checkbox" id="hours-on-5" value="5" />5am</label>
+						<label class="btn btn-default btn-sm"><input type="checkbox" id="hours-on-6" value="6" />6am</label>
+						<label class="btn btn-default btn-sm"><input type="checkbox" id="hours-on-7" value="7" />7am</label>
+						<label class="btn btn-default btn-sm"><input type="checkbox" id="hours-on-8" value="8" />8am</label>
+						<label class="btn btn-default btn-sm"><input type="checkbox" id="hours-on-9" value="9" />9am</label>
+						<label class="btn btn-default btn-sm"><input type="checkbox" id="hours-on-10" value="10" />10am</label>
+						<label class="btn btn-default btn-sm"><input type="checkbox" id="hours-on-11" value="11" />11am</label><br/>
+						<label class="btn btn-default btn-sm"><input type="checkbox" id="hours-on-12" value="12" />12 noon</label>
+						<label class="btn btn-default btn-sm"><input type="checkbox" id="hours-on-13" value="13" />1pm</label>
+						<label class="btn btn-default btn-sm"><input type="checkbox" id="hours-on-14" value="14" />2pm</label>
+						<label class="btn btn-default btn-sm"><input type="checkbox" id="hours-on-15" value="15" />3pm</label>
+						<label class="btn btn-default btn-sm"><input type="checkbox" id="hours-on-16" value="16" />4pm</label>
+						<label class="btn btn-default btn-sm"><input type="checkbox" id="hours-on-17" value="17" />5pm</label>
+						<label class="btn btn-default btn-sm"><input type="checkbox" id="hours-on-18" value="18" />6pm</label>
+						<label class="btn btn-default btn-sm"><input type="checkbox" id="hours-on-19" value="19" />7pm</label>
+						<label class="btn btn-default btn-sm"><input type="checkbox" id="hours-on-20" value="20" />8pm</label>
+						<label class="btn btn-default btn-sm"><input type="checkbox" id="hours-on-21" value="21" />9pm</label>
+						<label class="btn btn-default btn-sm"><input type="checkbox" id="hours-on-22" value="22" />10pm</label>
+						<label class="btn btn-default btn-sm"><input type="checkbox" id="hours-on-23" value="23" />11pm</label>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- END hours --> 
+	
+	<!-- weekday 
+	====================================================================== -->
+	<div class="row">
+		<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 section-pad section-left-col">Weekday</div>
+		<div class="col-xs-10 col-sm-10 col-md-10 col-lg-10 section-pad">
+			<div class="section-every">
+				<div class="section-every-label">Every</div>
+				<div class="btn-group" data-toggle="buttons">
+					<!--<label class="btn btn-default btn-sm"><input type="checkbox" id="weekday-every-1" value="1"/> day</label>-->
+					<label class="btn btn-default btn-sm"><input type="checkbox" id="weekday-every-mf" value="1-2-3-4-5" /> mon-fri</label>
+					<label class="btn btn-default btn-sm"><input type="checkbox" id="weekday-every-ss" value="0-1" /> sat-sun</label>
+				</div>
+				<div class="section-every-label"> Or on these days:</div>
+			</div>
+			<div class="section-every">
+				<div class="btn-group" data-toggle="buttons">
+					<label class="btn btn-default btn-sm"><input type="checkbox" id="weekday-on-0" value="0" />Sun</label>
+					<label class="btn btn-default btn-sm"><input type="checkbox" id="weekday-on-1" value="1" />Mon</label>
+					<label class="btn btn-default btn-sm"><input type="checkbox" id="weekday-on-2" value="2" />Tue</label>
+					<label class="btn btn-default btn-sm"><input type="checkbox" id="weekday-on-3" value="3" />Wed</label>
+					<label class="btn btn-default btn-sm"><input type="checkbox" id="weekday-on-4" value="4" />Thu</label>
+					<label class="btn btn-default btn-sm"><input type="checkbox" id="weekday-on-5" value="5" />Fri</label>
+					<label class="btn btn-default btn-sm"><input type="checkbox" id="weekday-on-6" value="6" />Sat</label>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- END weekday --> 
+	
+	<!-- days  
+	====================================================================== -->
+	<div class="row">
+		<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 section-pad section-left-col">Days</div>
+		<div class="col-xs-10 col-sm-10 col-md-10 col-lg-10 section-pad">
+			<div class="section-every">
+				<div class="section-every-label">Every</div>
+				<div class="btn-group" data-toggle="buttons">
+					<!--<label class="btn btn-default btn-sm"><input type="checkbox" id="days-every-1" value="1"/> day</label>-->
+					<label class="btn btn-default btn-sm"><input type="checkbox" id="days-every-odd" value="+2" /> odd</label>
+					<label class="btn btn-default btn-sm"><input type="checkbox" id="days-every-even" value="2" /> even</label>
+					<label class="btn btn-default btn-sm"><input type="checkbox" id="days-every-3" value="3" /> 3</label>
+					<label class="btn btn-default btn-sm"><input type="checkbox" id="days-every-5" value="5" /> 5</label>
+					<label class="btn btn-default btn-sm"><input type="checkbox" id="days-every-30" value="30" /> 10</label>
+					<label class="btn btn-default btn-sm"><input type="checkbox" id="days-every-14" value="14" /> 14</label>
+				</div>
+				<div class="section-every-label"> Or on these days:</div>
+			</div>
+			<div class="section-every">
+				<div class="btn-group" data-toggle="buttons">
+					<label class="btn btn-default btn-sm"><input type="checkbox" id="days-on-1" value="1" />1</label>
+					<label class="btn btn-default btn-sm"><input type="checkbox" id="days-on-2" value="2" />2</label>
+					<label class="btn btn-default btn-sm"><input type="checkbox" id="days-on-3" value="3" />3</label>
+					<label class="btn btn-default btn-sm"><input type="checkbox" id="days-on-4" value="4" />4</label>
+					<label class="btn btn-default btn-sm"><input type="checkbox" id="days-on-5" value="5" />5</label>
+					<label class="btn btn-default btn-sm"><input type="checkbox" id="days-on-6" value="6" />6</label>
+					<label class="btn btn-default btn-sm"><input type="checkbox" id="days-on-7" value="7" />7</label>
+					<label class="btn btn-default btn-sm"><input type="checkbox" id="days-on-8" value="8" />8</label>
+					<label class="btn btn-default btn-sm"><input type="checkbox" id="days-on-9" value="9" />9</label>
+					<label class="btn btn-default btn-sm"><input type="checkbox" id="days-on-10" value="10" />10</label>
+					<label class="btn btn-default btn-sm"><input type="checkbox" id="days-on-11" value="11" />11</label>
+					<label class="btn btn-default btn-sm"><input type="checkbox" id="days-on-12" value="12" />12</label>
+					<label class="btn btn-default btn-sm"><input type="checkbox" id="days-on-13" value="13" />13</label>
+					<label class="btn btn-default btn-sm"><input type="checkbox" id="days-on-14" value="14" />14</label>
+					<label class="btn btn-default btn-sm"><input type="checkbox" id="days-on-15" value="15" />15</label>
+					<label class="btn btn-default btn-sm"><input type="checkbox" id="days-on-16" value="16" />16</label>
+					<label class="btn btn-default btn-sm"><input type="checkbox" id="days-on-17" value="17" />17</label><br/>
+					<label class="btn btn-default btn-sm"><input type="checkbox" id="days-on-18" value="18" />18</label>
+					<label class="btn btn-default btn-sm"><input type="checkbox" id="days-on-19" value="19" />19</label>
+					<label class="btn btn-default btn-sm"><input type="checkbox" id="days-on-20" value="20" />20</label>
+					<label class="btn btn-default btn-sm"><input type="checkbox" id="days-on-21" value="21" />21</label>
+					<label class="btn btn-default btn-sm"><input type="checkbox" id="days-on-22" value="22" />22</label>
+					<label class="btn btn-default btn-sm"><input type="checkbox" id="days-on-23" value="23" />23</label>
+					<label class="btn btn-default btn-sm"><input type="checkbox" id="days-on-24" value="24" />24</label>
+					<label class="btn btn-default btn-sm"><input type="checkbox" id="days-on-25" value="25" />25</label>
+					<label class="btn btn-default btn-sm"><input type="checkbox" id="days-on-26" value="26" />26</label>
+					<label class="btn btn-default btn-sm"><input type="checkbox" id="days-on-27" value="27" />27</label>
+					<label class="btn btn-default btn-sm"><input type="checkbox" id="days-on-28" value="28" />28</label>
+					<label class="btn btn-default btn-sm"><input type="checkbox" id="days-on-29" value="29" />29</label>
+					<label class="btn btn-default btn-sm"><input type="checkbox" id="days-on-30" value="20" />30</label>
+					<label class="btn btn-default btn-sm"><input type="checkbox" id="days-on-31" value="31" />31</label>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- END days --> 
+	
+	<!-- months  
+	====================================================================== -->
+	<div class="row">
+		<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 section-pad section-left-col">Months</div>
+		<div class="col-xs-10 col-sm-10 col-md-10 col-lg-10 section-pad">
+			<div class="section-every">
+				<div class="section-every-label">Every</div>
+				<div class="btn-group" data-toggle="buttons">
+					<!--<label class="btn btn-default btn-sm"><input type="checkbox" id="months-every-1" value="1"/>month</label>-->
+					<label class="btn btn-default btn-sm"><input type="checkbox" id="months-every-odd" value="+2" />odd</label>
+					<label class="btn btn-default btn-sm"><input type="checkbox" id="months-every-even" value="2" />even</label>
+					<label class="btn btn-default btn-sm"><input type="checkbox" id="months-every-3" value="3" />3</label>
+					<label class="btn btn-default btn-sm"><input type="checkbox" id="months-every-4" value="4" />4</label>
+					<label class="btn btn-default btn-sm"><input type="checkbox" id="months-every-6" value="6" /> 6</label>
+				</div>
+				<div class="section-every-label">Or on these months:</div>
+			</div>
+			<div class="section-every">
+				<div class="btn-group" data-toggle="buttons">
+					<label class="btn btn-default btn-sm"><input type="checkbox" id="months-on-0" value="0" />Jan</label>
+					<label class="btn btn-default btn-sm"><input type="checkbox" id="months-on-1" value="1" />Feb</label>
+					<label class="btn btn-default btn-sm"><input type="checkbox" id="months-on-2" value="2" />Mar</label>
+					<label class="btn btn-default btn-sm"><input type="checkbox" id="months-on-3" value="3" />Apr</label>
+					<label class="btn btn-default btn-sm"><input type="checkbox" id="months-on-4" value="4" />May</label>
+					<label class="btn btn-default btn-sm"><input type="checkbox" id="months-on-5" value="5" />Jun</label>
+					<label class="btn btn-default btn-sm"><input type="checkbox" id="months-on-6" value="6" />Jul</label>
+					<label class="btn btn-default btn-sm"><input type="checkbox" id="months-on-7" value="7" />Aug</label>
+					<label class="btn btn-default btn-sm"><input type="checkbox" id="months-on-8" value="8" />Sep</label>
+					<label class="btn btn-default btn-sm"><input type="checkbox" id="months-on-9" value="9" />Oct</label>
+					<label class="btn btn-default btn-sm"><input type="checkbox" id="months-on-10" value="10" />Nov</label>
+					<label class="btn btn-default btn-sm"><input type="checkbox" id="months-on-11" value="11" />Dec</label>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- END months --> 
+	
+	<!-- spacer  
+	====================================================================== -->
+	<div class="bottomSpacer"></div>
+</div>
+
+<footer class="footer">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+				<button id="saveButton" type="button" class="btn btn-primary btn-lg">Save</button>
+			</div>
+			<div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+				<p class="text-muted">Put here: ~/Library/LaunchAgents/
+				<br />aka: /Users/__YOU__/Library/LaunchAgents/</p>
+				<textarea id="output">output</textarea>
+			</div>
+		</div>
+	</div>
+</footer>
+
+<script src="js/jquery.min.js" type="text/javascript"></script> 
+<script src="bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="js/plist.js" type="text/javascript"></script>
+<script src="js/filesaver.js" type="text/javascript"></script>
+<script src="js/app.js" type="text/javascript"></script>
+</body>
+</html>
