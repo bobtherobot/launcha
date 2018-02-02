@@ -313,7 +313,8 @@ Available on github at:
 
 		var args = document.getElementById("ProgramArguments").value;
 		if(args){
-			obj.ProgramArguments = args.split(" ");
+			//obj.ProgramArguments = args.split(" ");
+			obj.ProgramArguments = args;
 		}
 
 		if( document.getElementById("useStartInterval").checked ){
@@ -369,10 +370,9 @@ Available on github at:
 		
 		
 		
-		
 		var args = dataset.ProgramArguments;
 		if(args){
-			clean.ProgramArguments = program.split(" ");
+			clean.ProgramArguments = args.split(" ");
 		}
 		
 		// ------------------
@@ -447,6 +447,8 @@ Available on github at:
 		var calSrc = dataset.StartCalendarInterval;
 		if(calSrc){
 			var cal = buildTimes(calSrc);
+			//clean.StartCalendarInterval = cal;
+			//*
 			var type = TYPEOF(cal);
 			if(type == "array"){
 				if(cal.length > 0){
@@ -457,6 +459,7 @@ Available on github at:
 					clean.StartInterval = cal;
 				}
 			}
+			//*/
 		}
 
 		
@@ -550,7 +553,6 @@ Available on github at:
 					// --------------------
 					} else if(t == "w"){
 
-						console.log("Aevery",val);
 						if( val.indexOf("-") > 0 ){
 							Aevery = val.split("-");
 						} else {
@@ -612,7 +614,7 @@ Available on github at:
 
 		}
 
-
+		/*
 		// Minutes or hours using "every" option? 
 		// Then just convert into an interval and return a simple numeric value.
 		if(table.w.length < 1 && table.d.length < 1 && table.m.length < 1){
@@ -631,6 +633,7 @@ Available on github at:
 
 
 		}
+		*/
 
 
 		// Build an array of collated objects.

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+  <dict>
+    <key>GroupName</key>
+    <string>backup</string>
+    <key>Label</key>
+    <string>com.gieson.launcha.backup</string>
+    <key>ProgramArguments</key>
+    <array>
+      <string>-h</string>
+    </array>
+    <key>LowPriorityIO</key>
+    <true/>
+    <key>Program</key>
+    <string>/scripts/rsync/backup.sh</string>
+    <key>RunAtLoad</key>
+    <true/>
+    <key>EnvironmentVariables</key>
+    <dict>
+      <key>PATH</key>
+      <string>/bin:/usr/bin:/usr/local/bin</string>
+    </dict>
+    <key>StartInterval</key>
+    <integer>3600</integer>
+  </dict>
+</plist>

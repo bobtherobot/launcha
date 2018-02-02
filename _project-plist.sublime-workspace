@@ -1,0 +1,646 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"scrub",
+				"scrubToInView"
+			],
+			[
+				"get",
+				"getAllBlocks"
+			],
+			[
+				"Abea",
+				"AbeatControlList"
+			],
+			[
+				"float",
+				"myFloatSource"
+			],
+			[
+				"remove",
+				"removeAllEventListeners"
+			],
+			[
+				"html",
+				"html5\tSimple HTML5 Boilerplate"
+			],
+			[
+				"bl",
+				"inline-block"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 24889,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 367.0,
+		"last_filter": "Package Control: ",
+		"selected_items":
+		[
+			[
+				"Package Control: ",
+				"Package Control: List Packages"
+			],
+			[
+				"Package Control: ins",
+				"Package Control: Install Package"
+			],
+			[
+				"package",
+				"Package Control: Install Package"
+			],
+			[
+				"corona",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 521.0
+	},
+	"console":
+	{
+		"height": 240.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Volumes/Drives/projects/launcha",
+		"/Volumes/Drives/projects/launcha/js"
+	],
+	"file_history":
+	[
+		"/Volumes/Drives/projects/launcha/js/app.js",
+		"/Volumes/Drives/projects/launcha/css/app.css",
+		"/Volumes/Drives/projects/launcha/index.html",
+		"/Volumes/Drives/projects/launcha/HOW TO.txt",
+		"/Volumes/Drives/projects/plist/_project-plist.sublime-project",
+		"/Volumes/Drives/projects/Key_Chords_EXE/com/gieson/GuitarExport.as",
+		"/Volumes/Drives/projects/Key_Chords_EXE/com/gieson/widgets/BlockTimeline.as",
+		"/Volumes/Drives/projects/Key_Chords_EXE/com/gieson/utils/Tools.as",
+		"/Volumes/Drives/projects/Key_Chords_EXE/com/gieson/Guitar.as",
+		"/Volumes/Drives/projects/Key_Chords_EXE/com/gieson/Chords.as",
+		"/Volumes/Drives/projects/Key_Chords_EXE/com/gieson/audio/midi/Util.as",
+		"/Volumes/Drives/projects/Key_Chords_EXE/com/gieson/audio/midi/MidiEvent.as",
+		"/Volumes/Drives/projects/Key_Chords_EXE/com/gieson/audio/midi/MidiEventNote.as",
+		"/Volumes/Drives/projects/Key_Chords_EXE/com/gieson/audio/midi/MidiEventMeta.as",
+		"/Volumes/Drives/projects/Key_Chords_EXE/com/gieson/audio/midi/MidiTrack.as",
+		"/Volumes/Drives/projects/Key_Chords_EXE/com/gieson/ProjectData.as",
+		"/Volumes/Drives/projects/Key_Chords_EXE/com/gieson/FileManager.as",
+		"/Volumes/Drives/projects/Key_Chords_EXE/com/gieson/GuitarString.as",
+		"/Volumes/Drives/projects/Key_Chords_EXE/com/Note.as",
+		"/Volumes/Drives/projects/Key_Chords_EXE/com/gieson/music/ChordOps.as",
+		"/Volumes/Drives/projects/Key_Chords_EXE/com/gieson/music/ChordGroups.as",
+		"/Volumes/Drives/projects/Key_Chords_EXE/com/gieson/Guitar-um.as",
+		"/Volumes/Drives/projects/Key_Chords_EXE/com/gieson/EasySlider.as",
+		"/Users/bob/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Volumes/Drives/projects/Key_Chords_EXE/com/gieson/ChordGroups.as",
+		"/Volumes/Drives/projects/Key_Chords_EXE/com/gieson/utils/air/WindowTracker.as",
+		"/Volumes/Drives/projects/Key_Chords_EXE/_project-keychords.sublime-project",
+		"/Volumes/Drives/projects/Key_Chords_EXE/keychords-app.xml",
+		"/Volumes/Drives/projects/beeb/_project-wimpy.sublime-project",
+		"/Volumes/Drives/projects/beeb/skinmachine2/src/artboard/SelectionManager.js",
+		"/Volumes/Drives/projects/beeb/skinmachine2/src/artboard/Artboard.js",
+		"/Volumes/Drives/projects/beeb/skinmachine2/src/SkinMachine.js",
+		"/Volumes/Drives/projects/beeb/jbeeb2/src/display/TextBox.js",
+		"/Volumes/Drives/projects/beeb/jbeeb2/src/display/Box.js",
+		"/Volumes/Drives/projects/beeb/skinmachine2/src/artboard/SmgrKeyboard.js",
+		"/Volumes/Drives/projects/beeb/skinmachine2/src/artboard/GrabAndZoom.js",
+		"/Volumes/Drives/projects/beeb/skinmachine2/skinmachine.html",
+		"/Volumes/Drives/projects/beeb/jbeeb2/src/utils/Keyboard.js",
+		"/Volumes/Drives/projects/beeb/skinmachine2/skinmachine.css",
+		"/Volumes/Drives/projects/beeb/_project-skinmachine2.sublime-project",
+		"/Volumes/Drives/projects/beeb/skinmachine2 copy/screenshot-maker.html",
+		"/Volumes/Drives/projects/beeb/skinmachine2 copy/src/SkinMachine.js",
+		"/Volumes/Drives/projects/beeb/skinmachine2 copy/skinmachine.css",
+		"/Users/bob/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/Users/bob/Desktop/Mike Classic.tmTheme",
+		"/Users/bob/Desktop/FindResults_Custom_Theme.hidden-tmTheme",
+		"/Volumes/Drives/projects/beeb/skinmachine2/src/panels/PropBox.js",
+		"/Volumes/Drives/projects/beeb/skinmachine2/src/panels/OptionsPanel.js",
+		"/Volumes/Drives/projects/beeb/_project-skinmachine2.sublime-workspace",
+		"/Volumes/Drives/projects/beeb/skinmachine2/skinmachine.obf.js",
+		"/Volumes/Drives/projects/tmobile/11g.sublime-project",
+		"/Volumes/Drives/projects/tmobile/assets/TMOLogo_White_300px.png",
+		"/Users/bob/Desktop/whatever/mfw.html",
+		"/Volumes/Drives/projects/3dText/EaselJS-0.8.2/lib/easeljs-0.8.2.min.js",
+		"/Volumes/Drives/projects/3dText/EaselJS-0.8.2/lib/webgl-0.8.2.min.js",
+		"/Users/bob/Library/Application Support/Sublime Text 3/Packages/User/snippet-css-starter.sublime-snippet",
+		"/Volumes/Drives/projects/DroneBot/AP_ChordDice.lua",
+		"/Volumes/Drives/projects/DroneBot/TouchPlayer.lua",
+		"/Volumes/Drives/projects/DroneBot/TouchHandlerObj.lua",
+		"/Volumes/Drives/projects/DroneBot/Tools.lua",
+		"/Volumes/Drives/projects/DroneBot/AP_ChordEditor.lua",
+		"/Volumes/Drives/projects/DroneBot/AP_ChordGroups.lua",
+		"/Volumes/Drives/projects/DroneBot/AP_ChordSetup.lua",
+		"/Volumes/Drives/projects/DroneBot/AP.lua",
+		"/Volumes/Drives/projects/DroneBot/AudioList.lua",
+		"/Volumes/Drives/projects/DroneBot/AudioListLite.lua",
+		"/Volumes/Drives/projects/DroneBot/Browser.lua",
+		"/Volumes/Drives/projects/DroneBot/Button.lua",
+		"/Volumes/Drives/projects/DroneBot/cleangroup.lua",
+		"/Volumes/Drives/projects/DroneBot/config.lua",
+		"/Volumes/Drives/projects/DroneBot/Database.lua",
+		"/Volumes/Drives/projects/DroneBot/FlickList.lua",
+		"/Volumes/Drives/projects/DroneBot/Instrument.lua",
+		"/Volumes/Drives/projects/DroneBot/Incrementer.lua",
+		"/Volumes/Drives/projects/DroneBot/Lister.lua",
+		"/Volumes/Drives/projects/DroneBot/main.lua",
+		"/Volumes/Drives/projects/DroneBot/MainFunctions.lua",
+		"/Volumes/Drives/projects/DroneBot/Piano.lua",
+		"/Volumes/Drives/projects/DroneBot/RangeSlider.lua",
+		"/Volumes/Drives/projects/DroneBot/PopUp.lua",
+		"/Volumes/Drives/projects/DroneBot/SaveLoadDialog.lua",
+		"/Volumes/Drives/projects/DroneBot/ScreenPreferences.lua",
+		"/Volumes/Drives/projects/DroneBot/SingleWheel.lua",
+		"/Volumes/Drives/projects/DroneBot/SliderASD.lua",
+		"/Volumes/Drives/projects/DroneBot/Status.lua",
+		"/Volumes/Drives/projects/DroneBot/ToggleObj.lua",
+		"/Volumes/Drives/projects/DroneBot/SuperAudio.lua",
+		"/Volumes/Drives/web/www.test.com/wimpy/wimpy.customizer.html",
+		"/Users/bob/Desktop/plist page/bootstrap/bootstrap.min.js",
+		"/Users/bob/Desktop/plist page/bootstrap/bootstrap.min.css",
+		"/Users/bob/Desktop/plist page/bootstrap/bootstrap-theme.min.css",
+		"/Users/bob/Desktop/BU01-import2.sql",
+		"/Volumes/Drives/projects/disks/dbtest/BU10.js",
+		"/Volumes/Drives/projects/disks copy/dbtest/BU01-json.txt",
+		"/Volumes/Drives/projects/disks/BU10-json.txt"
+	],
+	"find":
+	{
+		"height": 22.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			"<project>",
+			"<current file>",
+			"<project>",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"EnvironmentVariables",
+			"console",
+			"ProgramArguments",
+			"<div",
+			"alphanumeric",
+			"com.gieson",
+			"AbeatControlList",
+			"drawProgChart",
+			"lastRoman",
+			"storeLastRoman",
+			"itemAddedComplete",
+			"guitar.",
+			"playing",
+			"\"click",
+			"\"clikc",
+			"prevChord",
+			"rewind",
+			"b_next",
+			"autoScrollTo",
+			"scrubToInView",
+			"trace",
+			"scrubToInView",
+			"cidx",
+			"blockRenderer",
+			"VblockRenderer",
+			"createChordFromBlocks",
+			"\"chart\"",
+			"scrubToInView",
+			"drawProgChart",
+			"scrubToInView",
+			"setTimeout",
+			"scrubToInView",
+			"getItemAt",
+			"progBlockW",
+			"scrubToInView",
+			"diceroll",
+			"diceRollsStepper",
+			"=3",
+			" = 3",
+			"b_append_gen",
+			"clear",
+			"drawProgChart",
+			"8",
+			"rollDice",
+			"totalStringsAvailable",
+			"totalStringsToPlay",
+			"stepper_tf",
+			"setTextFormat",
+			".font",
+			"Digital",
+			".font",
+			"dropShadow",
+			"DropShadowFilter",
+			"inmark",
+			"diceRolls",
+			"dice",
+			"scrubToInView",
+			"rolldice",
+			"empty",
+			"clearChartBkgds",
+			"clear",
+			"dragInstructions",
+			"dragInstClear",
+			"createChord",
+			"empty",
+			".font",
+			"stepper_tf",
+			"list_key_tf",
+			"TextFormat",
+			"makeDopeSheet",
+			"print",
+			"renderedClipCount",
+			"row",
+			"convertSymbolToHuman",
+			"zuz",
+			"strumDirection",
+			"STRUM",
+			"patternSizeMin",
+			"patternSize",
+			"strumSpeedMin",
+			"strumSpeedStepper",
+			" strumSpeedStepper",
+			"patternSizeStepper",
+			"strumPatternParts",
+			"replace",
+			"Spacer",
+			"createSpacer",
+			"function setup",
+			"addChild",
+			"f_chord_down",
+			"row",
+			"col",
+			"Chords[",
+			"rewindTo",
+			"_strumPatternCurrent",
+			"dereColorProgChart",
+			"rewind",
+			"callback",
+			"arrange",
+			"strumDirection",
+			"writeVarLength",
+			"while",
+			"millisec",
+			"MidiEventText",
+			"writeVarLength",
+			"midi",
+			"trace",
+			"writeit",
+			"getBeatsCallback",
+			"beatCount",
+			"totalBeatsRequired",
+			"getBeatsCallback",
+			"trace",
+			"file",
+			"sampleData",
+			"buildStrict",
+			"pairStore",
+			"trace",
+			"totalBeatsRequired",
+			"_chord",
+			"sampleData",
+			"AprogList[m]",
+			"aprog",
+			"replace",
+			"getChordNotes",
+			"trace",
+			"8",
+			"maxProgChords"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"randomInt"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": false,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "index.html",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 24889,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								678,
+								678
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.clone": -1,
+							"bracket_highlighter.clone_locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										14,
+										15
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/angle_bracket.png",
+										"region.orangish"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										0,
+										1
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.clone_regions":
+							[
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content"
+							],
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content"
+							],
+							"markdonw_live_preview_last_run": 1517549326.05,
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 22.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 100.0
+	},
+	"output.find_results":
+	{
+		"height": 311.0
+	},
+	"pinned_build_system": "",
+	"project": "_project-plist.sublime-project",
+	"replace":
+	{
+		"height": 40.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 266.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
